@@ -12,5 +12,7 @@ for(let contador = 0;contador < listaDeTeclas.length);contador = contador++){
     tecla.onclick = function(){ //função anônima auxiliar ao tocaSom
         tocaSom(idAudio);
     }
-    //console.log(contador);
+    tecla.onkeydown = function(){
+        tecla.classList.add('ativa');
+    }
 }
